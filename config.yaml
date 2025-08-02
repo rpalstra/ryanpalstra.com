@@ -1,4 +1,20 @@
-baseURL: https://ryanpalstra.com/
+baseURL: "https://ryanpalstra.com/"
 languageCode: "en-us"
 title: "Ryan Palstra"
-theme: "introduction"
+
+module:
+  imports:
+  - path: "github.com/joshed-io/reveal-hugo"
+
+theme: "github.com/joshed-io/reveal-hugo"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+outputFormats:
+  Reveal:
+    baseName: "index"
+    mediaType: "text/html"
+    isHTML: true
