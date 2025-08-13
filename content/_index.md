@@ -7,4 +7,4 @@ outputs: Reveal
 
 # Ryan Palstra
 
-13 August 2025
+Born August 13th, 2025 in Rotterdam, The Netherlands
