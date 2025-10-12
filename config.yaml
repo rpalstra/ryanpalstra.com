@@ -2,11 +2,11 @@ baseURL: "https://ryanpalstra.com/"
 languageCode: "en-us"
 title: "Ryan Palstra"
 
-module:
-  imports:
-  - path: "github.com/joshed-io/reveal-hugo"
+#module:
+#  imports:
+#  - path: "github.com/joshed-io/reveal-hugo"
 
-theme: "github.com/joshed-io/reveal-hugo"
+theme: "ryan"
 
 markup:
   goldmark:
