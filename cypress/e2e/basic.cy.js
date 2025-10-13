@@ -2,8 +2,8 @@ describe('empty spec', () => {
   beforeEach(() => {
     cy.visit('/')
   })
-  it('displays the resources text', () => {
+  it('displays the image', () => {
     cy.get('img')
-    .contains('ryan');
+    .should(be.visible')
   })
 })
