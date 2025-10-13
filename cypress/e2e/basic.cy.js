@@ -4,6 +4,6 @@ describe('empty spec', () => {
   })
   it('displays the image', () => {
     cy.get('img')
-    .should(be.visible')
+    .should('be.visible')
   })
 })
