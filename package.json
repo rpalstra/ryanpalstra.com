@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "cypress": "^14.3.0",
-    "postcss": "latest",
-    "postcss-cli": "latest",
-    "autoprefixer": "latest"
-  }
-}
