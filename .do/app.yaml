@@ -7,3 +7,8 @@ static_sites:
     deploy_on_push: true
     repo: rpalstra/ryanpalstra.com
   name: ryanpalstra
+  envs:
+    - key: HUGO_EXTENDED
+      value: 1
+    - key: HUGO_VERSION
+      value: 0.158.0
