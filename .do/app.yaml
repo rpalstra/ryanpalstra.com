@@ -1,3 +1,4 @@
+---
 name: ryanpalstra
 static_sites:
 - build_command: rm -r ./public; hugo --destination ./public
