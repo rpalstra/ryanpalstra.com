@@ -1,6 +1,25 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "$schema": "https://renovatebot.com",
   "extends": [
-    "local>netlify-templates/renovate-config"
+    "config:recommended"
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "^netlify\\.toml$",
+        "^statichost\\.yml$",
+        "^\\.do/app\\.ya?ml$",
+        "^\\.gitlab-ci\\.ya?ml$",
+        "^\\.github/workflows/.*\\.ya?ml$"
+      ],
+      "matchStrings": [
+        "HUGO_VERSION\\s*=\\s*['\"]?(?<currentValue>[0-9.]+)['\"]?",
+        "hugo-version:\\s*['\"]?(?<currentValue>[0-9.]+)['\"]?",
+        "version:\\s*['\"]?(?<currentValue>[0-9.]+)['\"]?\\s*#\\s*renovate:\\s*depName=gohugoio/hugo"
+      ],
+      "depNameTemplate": "gohugoio/hugo",
+      "datasourceTemplate": "github-releases"
+    }
   ]
 }
