@@ -14,8 +14,11 @@
         "^\\.github/workflows/.*\\.ya?ml$"
       ],
       "matchStrings": [
+        "image:\\s*hugomods/hugo:['\"]?(?<currentValue>[0-9.]+)['\"]?",
         "HUGO_VERSION\\s*=\\s*['\"]?(?<currentValue>[0-9.]+)['\"]?",
+        "HUGO_VERSION:\\s*['\"]?(?<currentValue>[0-9.]+)['\"]?",
         "hugo-version:\\s*['\"]?(?<currentValue>[0-9.]+)['\"]?",
+        "value:\\s*['\"]?(?<currentValue>[0-9.]+)['\"]?",
         "version:\\s*['\"]?(?<currentValue>[0-9.]+)['\"]?\\s*#\\s*renovate:\\s*depName=gohugoio/hugo"
       ],
       "depNameTemplate": "gohugoio/hugo",
